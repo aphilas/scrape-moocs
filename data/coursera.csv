@@ -1,0 +1,49 @@
+Platform,Title,Mode of delivery,Link,Subscribers,Rating,Lectures,Practice tests,Payment type,Published,Price with discount (USD),Price (USD),Topic,Cloudswyft course code,Validity,Certificate,Login required,Level,Notes
+Coursera,What is Data Science?,Online,https://coursera.org/learn/what-is-datascience,,4.7,,,One-time,,,,data science,DAT101x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,SQL for Data Science,Online,https://coursera.org/learn/sql-for-data-science,,4.6,,,One-time,,,,data science,DAT101x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Data Science in Real Life,Online,https://coursera.org/learn/real-life-data-science,,4.4,,,One-time,,,,data science,DAT101x,Forever,TRUE,TRUE,,Free to audit
+Coursera,A Crash Course in Data Science,Online,https://coursera.org/learn/data-science-course,,4.5,,,One-time,,,,data science,DAT101x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Data Science Ethics,Online,https://coursera.org/learn/data-science-ethics,,4.6,,,One-time,,,,data science,DAT101x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,What is Data Science?,Online,https://coursera.org/learn/what-is-datascience,,4.7,,,One-time,,,,data science,DAT204x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Data Science in Real Life,Online,https://coursera.org/learn/real-life-data-science,,4.4,,,One-time,,,,data science,DAT204x,Forever,TRUE,TRUE,,Free to audit
+Coursera,SQL for Data Science,Online,https://coursera.org/learn/sql-for-data-science,,4.6,,,One-time,,,,data science,DAT204x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Data Science Ethics,Online,https://coursera.org/learn/data-science-ethics,,4.6,,,One-time,,,,data science,DAT204x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Introduction to Data Science in Python,Online,https://coursera.org/learn/python-data-analysis,,4.5,,,One-time,,,,data science,DAT204x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Introduction to Data Science in Python,Online,https://coursera.org/learn/python-data-analysis,,4.5,,,One-time,,,,data science,DAT208x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Python for Data Science and AI,Online,https://coursera.org/learn/python-for-applied-data-science-ai,,4.6,,,One-time,,,,data science,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Python for Genomic Data Science,Online,https://coursera.org/learn/python-genomics,,4.3,,,One-time,,,,data science,DAT208x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Data Science Ethics,Online,https://coursera.org/learn/data-science-ethics,,4.6,,,One-time,,,,data science,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,What is Data Science?,Online,https://coursera.org/learn/what-is-datascience,,4.7,,,One-time,,,,data science,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Analyzing Big Data with SQL,Online,https://coursera.org/learn/cloudera-big-data-analysis-sql-queries,,4.9,,,One-time,,,,data science,DAT213x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Introduction to Big Data,Online,https://coursera.org/learn/big-data-introduction,,4.6,,,One-time,,,,big data,DAT229x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Analyzing Big Data with SQL,Online,https://coursera.org/learn/cloudera-big-data-analysis-sql-queries,,4.9,,,One-time,,,,big data,DAT213x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Introduction to Artificial Intelligence (AI),Online,https://coursera.org/learn/introduction-to-ai,,4.7,,,One-time,,,,ai,DAT263x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,What is “the mind” and what is artificial intelligence?,Online,https://coursera.org/learn/mind-machine-artificial-intelligence,,,,,One-time,,,,ai,DAT263x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Introduction to Data Science in Python,Online,https://coursera.org/learn/python-data-analysis,,4.5,,,One-time,,,,ai,DAT208x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Python for Data Science and AI,Online,https://coursera.org/learn/python-for-applied-data-science-ai,,4.6,,,One-time,,,,ai,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Python for Genomic Data Science,Online,https://coursera.org/learn/python-genomics,,4.3,,,One-time,,,,ai,DAT208x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Data Science Ethics,Online,https://coursera.org/learn/data-science-ethics,,4.6,,,One-time,,,,ai,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,What is Data Science?,Online,https://coursera.org/learn/what-is-datascience,,4.7,,,One-time,,,,ai,DAT208x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Reinforcement Learning in Finance,Online,https://coursera.org/learn/reinforcement-learning-in-finance,,3.6,,,One-time,,,,ai,DAT257x,Forever,TRUE,TRUE,advanced,Free to audit
+Coursera,Natural Language Processing,Online,https://coursera.org/learn/language-processing,,4.6,,,One-time,,,,ai,DEV288x,Forever,TRUE,TRUE,advanced,Free to audit
+Coursera,Clinical Natural Language Processing,Online,https://coursera.org/learn/clinical-natural-language-processing,,,,,One-time,,,,ai,DEV288x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Natural Language Processing in TensorFlow,Online,https://coursera.org/learn/natural-language-processing-tensorflow,,4.6,,,One-time,,,,ai,DEV288x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Fundamentals of Network Communication,Online,https://coursera.org/learn/fundamentals-network-communications,,4.6,,,One-time,,,,it support,CLD252x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Hardware Security,Online,https://coursera.org/learn/hardware-security,,4.1,,,One-time,,,,it support,CLD259x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Problem Solving Using Computational Thinking,Online,https://coursera.org/learn/compthinking,,,,,One-time,,,,sw dev,DEV262x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Computational Thinking for Problem Solving,Online,https://coursera.org/learn/computational-thinking-problem-solving,,4.8,,,One-time,,,,sw dev,DEV262x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Python Basics,Online,https://coursera.org/learn/python-basics,,4.8,,,One-time,,,,sw dev,DEV274x,Forever,TRUE,TRUE,beginner,Free to audit
+Coursera,Object Oriented Programming in Java,Online,https://coursera.org/learn/object-oriented-java,,4.7,,,One-time,,,,sw dev,DEV277x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Introduction à la programmation orientée objet (en Java),Online,https://coursera.org/learn/programmation-orientee-objet-java,,4.8,,,One-time,,,,sw dev,DEV277x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Data Structures and Algorithms (I),Online,https://coursera.org/learn/data-structures-algorithms-1,,,,,One-time,,,,sw dev,DEV285x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Data Structures and Algorithms (IV),Online,https://coursera.org/learn/data-structures-algorithms-4,,,,,One-time,,,,sw dev,DEV285x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Data Structures and Algorithms (II),Online,https://coursera.org/learn/data-structures-algorithms-2,,,,,One-time,,,,sw dev,DEV285x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Data Structures and Algorithms (III),Online,https://coursera.org/learn/data-structures-algorithms-3,,,,,One-time,,,,sw dev,DEV285x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Social Media Data Analytics,Online,https://coursera.org/learn/social-media-data-analytics,,4.1,,,One-time,,,,iot,DEV326x,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,Mastering Data Analysis in Excel,Online,https://coursera.org/learn/analytics-excel,,4.2,,,One-time,,,,data analysis,DAT205x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Introduction to Data Analysis Using Excel,Online,https://coursera.org/learn/excel-data-analysis,,4.7,,,One-time,,,,data analysis,DAT205x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Machine Learning for Data Analysis,Online,https://coursera.org/learn/machine-learning-data-analysis,,4.2,,,One-time,,,,data analysis,DAT205x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Data Analysis Tools,Online,https://coursera.org/learn/data-analysis-tools,,4.5,,,One-time,,,,data analysis,DAT205x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Exploratory Data Analysis,Online,https://coursera.org/learn/exploratory-data-analysis,,4.7,,,One-time,,,,data analysis,DAT205x,Forever,TRUE,TRUE,,Free to audit
+Coursera,Continuous Integration,Online,https://coursera.org/learn/continuous-integration,,3.6,,,One-time,,,,az-400 devops,AZ-400.2,Forever,TRUE,TRUE,intermediat,Free to audit
+Coursera,IT Infrastructure and Emerging Trends,Online,https://coursera.org/learn/it-infrastructure-and-emerging-trends,,4.7,,,One-time,,,,az-301 arch des,,Forever,TRUE,TRUE,beginner,Free to audit
