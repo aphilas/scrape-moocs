@@ -1,3 +1,5 @@
 .vscode/
 geckodriver.log
 notes.txt
+.bashrc
+.env
