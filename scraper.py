@@ -117,22 +117,21 @@ class ScrapeCoursera(Scraper):
         pattern = r'Approx(?:imately)?\.? (.+) to complete'
         match = re.search(pattern, duration_str)
         return match.group(1) if match else ''
-
-    # Avoids StaleElementReferenceException
+        
     def read_price(self, timeout=TIMEOUT):
-        try:
-            price_el = WebDriverWait(
-                self.driver, 
-                timeout, 
-                ignored_exceptions=[StaleElementReferenceException]
-            ).until(
-                EC.text_to_be_present_in_element((By.CSS_SELECTOR, self.selectors['price']), '$')
-            )
+        attempts = 3
 
-            return self.text(self.find_element(self.selectors['price'])).lstrip('$') if price_el else ''
-        except TimeoutException:
-            print(f'Timed out: {self.selectors["price"]}')
-            return ''
+        # avoid StaleElementReferenceException
+        for _ in range(attempts):
+            try:
+                price_el = self.wait_for_element(self.selectors['price'])
+                price = price_el.text
+                break
+            except StaleElementReferenceException:
+                price = ''
+                print(f'Stale: price')
+
+        return price.lstrip('$')
 
     def scrape_price(self):
         enroll_button = self.wait_for_element(self.selectors['enroll_button'])
