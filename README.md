@@ -1,7 +1,7 @@
-# moocs-scraper
+# scrape-moocs
 
 Scrape MOOC websites to find course attributes.
-Given a CSV with course urls, generate attributes.
+Given a CSV with course urls, generate metadata.
 
 ## Supports
 | Attribute/Provider | Udemy              | Coursera           |
@@ -20,3 +20,9 @@ Selenium
 ## How to run
 
 *TO DO*
+
+## Acknowledgements
+
+Input dataset gleaned from Kaggle
+
+*ADD SOURCES*
