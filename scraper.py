@@ -10,9 +10,9 @@ import re
 import os
 
 dotenv.load_dotenv('./.env')
-TIMEOUT = 5
+TIMEOUT = 7
 
-# TODO: append to CSV line by line, in case of error...
+# TODO: append to CSV line by line?
 
 def find(seq, fn=None, default=None):
     '''Returns first element in seq for which fn(element) is true else returns default'''
@@ -93,7 +93,6 @@ class ScrapeCoursera(Scraper):
             courses.append(course)
 
         self.driver.quit()
-
         return courses
 
     def scrape_details(self, url):
@@ -105,10 +104,16 @@ class ScrapeCoursera(Scraper):
 
         # ordered
         duration = self.find_duration(self.find_visible_elements(self.selectors['course_details']))
-        price = self.scrape_price()
+        price, payment_type = self.scrape_price()
 
         course['price'] = price
         course['duration'] = duration
+        course['payment_type'] = payment_type
+        course['free_to_audit'] = 'TRUE' if payment_type == 'one-time' else 'FALSE'
+
+        # for debugging
+        if not all(course.values()):
+            print(course)
 
         return course
 
@@ -140,7 +145,7 @@ class ScrapeCoursera(Scraper):
             enroll_button.click()
         else:
             print('Enroll button not found')
-            return ''
+            return '', ''
 
         # 'filter' dict
         modals = {key:value for (key, value) in self.selectors.items() if key in ('free_trial', 'enroll_modal', 'enroll_choice')}
@@ -149,7 +154,7 @@ class ScrapeCoursera(Scraper):
         modal = self.wait_for_element(modals_selector)
 
         if not modal:
-            return ''
+            return '', ''
 
         modal_class = modal.get_attribute('class')
 
@@ -157,21 +162,18 @@ class ScrapeCoursera(Scraper):
         matching_modal = find(modals.items(), lambda modal_spec: modal_spec[1].lstrip('.') in modal_class)[0]
 
         if matching_modal == 'free_trial':
-            return self.read_price()
+            return self.read_price(), 'monthly'
         elif matching_modal == 'enroll_modal':    
             next_button = self.wait_until_clickable(self.selectors['next_button'])
-
             if not next_button:
-                return ''
+                return '', ''
             next_button.click()
-
-            return self.read_price()
+            return self.read_price(), 'monthly'
         elif matching_modal == 'enroll_choice':
-            # course free to audit - maybe record that?
-            return self.read_price()
+            return self.read_price(), 'one-time' # free to audit
         else:
             print("Couldn't match a modal")
-            return ''
+            return '', ''
 
 class ScrapeUdemy(Scraper):
     # TODO - improve selectors, fetch other attrs
@@ -225,7 +227,8 @@ def save_courses(courses, output_file, append=False):
 
     with open(output_file, mode) as fd:
         writer = csv.DictWriter(fd, fieldnames=field_names)
-        writer.writeheader()
+        if not append:
+            writer.writeheader()
         writer.writerows(courses)
 
 def extract_col(file_link, col_name):
@@ -236,7 +239,7 @@ def extract_col(file_link, col_name):
 
 
 udemy_input = './data/udemy.csv'
-udemy_output = './out/udemy-prices-v2.csv'
+udemy_output = './out/udemy-prices.csv'
 # udemy_courses = ScrapeUdemy().get_courses(extract_col(udemy_input, 'Link'))
 # save_courses(udemy_courses, udemy_output)
 
